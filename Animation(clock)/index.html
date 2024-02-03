@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <style>
+            .container{
+                  width: 80%;
+                  margin: auto;
+                 
+                 & .cricle{
+                        margin: auto;
+                        width: 250px;
+                        height: 250px;
+                        border: 1px solid black;
+                        border-radius: 50%;
+                        background-color:rgb(217, 150, 150);
+                        
+                        position: relative;
+                        animation: rotate 60s steps(60, end) infinite ;
+                        
+                             
+                        & .line{
+                              width: 45%;
+                              border: 1px solid black;
+                              top:52%;
+                              left: 50%;
+                              position: absolute;
+                              /* transform-origin: top; */
+                             /* animation-name: rotate;
+                              animation-duration: 3s;
+                              animation-timing-function: ease;
+                              animation-iteration-count: infinite; */
+                             
+                        }
+                        & .dot-clock{
+                              margin: auto;
+                              width: 10px;
+                              height: 10px;
+                              top: 50%;
+                              left: 50%;
+                              border: 1px solid black;
+                              border-radius: 50%;
+                              position: absolute;
+                              background-color: black;
+                        }
+                        
+                  }
+            }
+            @keyframes rotate{
+                   /* 0%{
+                        transform: rotateX(0);
+                        transform: rotateY(0);    
+                  } */
+                  /* 50%{
+                        transform: rotateZ(10deg);
+                  } */ 
+                  100%{
+                        /* transform: rotateX(0); */
+                        transform: rotateZ(360deg) ;
+                  }
+            }
+      </style>
+</head>
+<body>
+      <main class="container">
+            <div class="cricle">
+                  <div class="line">
+                        
+                  </div>
+                  <div class="dot-clock"></div>
+                  
+            </div>
+      </main>
+</body>
+</html>

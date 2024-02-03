@@ -1,0 +1,60 @@
+.container{
+      margin: auto;
+      padding: 0;
+      width: 95vw;
+      height: 100vh;
+      display: flex;
+      justify-content: space-between;
+      /* align-items: center; */
+      background-color: rgb(249, 149, 149);
+      text-align: center;
+      gap: 7px;
+      margin-right: 0;
+     
+     
+      
+}
+.left-side{
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      & .image{
+            background-color: red;
+            height: 35% ;
+           
+      }
+}
+.obj{
+      object-fit: cover;
+}
+.bg-color{
+      height: 50vh;
+      background-color: blue;
+}
+.table-side{
+      width: 70%;
+}
+table{
+      width: 70%;
+      height: 70% ;
+      background-color: yellow;
+      grid-area: span 2 ;
+     
+}
+td{
+      border-radius: 50%;
+     
+}
+table,th,td{
+      border-spacing: 2em;
+      border: 1px solid black;
+}
+.red{
+      margin: 0;
+      padding: 0;
+      color: red;
+}
+.Calendar{
+      background-color: green;
+}
